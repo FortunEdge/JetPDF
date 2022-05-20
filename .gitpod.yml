@@ -1,5 +1,6 @@
 tasks:
   - init: |
+      cd jet-pdf
       npm install
     command: |
       cd jet-pdf
