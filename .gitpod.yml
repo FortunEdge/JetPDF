@@ -1,0 +1,9 @@
+tasks:
+  - init: |
+      npm install
+    command: |
+      ng serve
+
+ports:
+  - port: 4200
+    onOpen: open-browser
