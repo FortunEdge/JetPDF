@@ -2,6 +2,7 @@ tasks:
   - init: |
       npm install
     command: |
+      cd jet-pdf
       ng serve
 
 ports:
