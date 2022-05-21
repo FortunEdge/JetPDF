@@ -1,8 +1,11 @@
 tasks:
-  - init: |
-      cd jet-pdf
+  - name: Prebuild tasks
+    before: |
       npm install -g @angular/cli
+    init: |
+      cd jet-pdf
       npm install
+  - name: Open preview    
     command: |
       cd jet-pdf
       ng serve
