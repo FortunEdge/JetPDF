@@ -1,8 +1,8 @@
 tasks:
   - init: |
       cd jet-pdf
+      npm install -g @angular/cli
       npm install
-      npm install @angular/cli
     command: |
       cd jet-pdf
       ng serve
