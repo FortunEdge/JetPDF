@@ -1,0 +1,13 @@
+<p>Internal screaming ensues...</p>
+<h1>Catalog</h1>
+<ul class="list-group mb-4">
+    <li class="list-group-item" *ngFor="let cat of catalogEntries">
+        <app-pdf-object-info [name]="cat[0]" [obj]="cat[1]"></app-pdf-object-info>
+    </li>
+</ul>
+<h1>First Page</h1>
+<ul class="list-group mb-4">
+    <li class="list-group-item" *ngFor="let item of pdfNode">
+        <app-pdf-object-info [name]="item[0]" [obj]="item[1]"></app-pdf-object-info>
+    </li>
+</ul>

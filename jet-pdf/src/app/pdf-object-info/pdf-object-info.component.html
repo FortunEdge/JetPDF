@@ -1,0 +1,7 @@
+<h2>{{objType}} <i>{{name}}</i></h2>
+<p class="badge bg-secondary">{{objValue}}</p>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let child of objChildren">
+        <app-pdf-object-info [name]="child.name" [obj]="child.obj"></app-pdf-object-info>
+    </li>
+</ul>
