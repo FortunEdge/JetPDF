@@ -9,13 +9,15 @@ import { PdfObjectInfoComponent } from './pdf-object-info/pdf-object-info.compon
 import { PageThumbnailComponent } from './page-thumbnail/page-thumbnail.component';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { TopToolbarComponent } from './top-toolbar/top-toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestPdfComponent,
     PdfObjectInfoComponent,
-    PageThumbnailComponent
+    PageThumbnailComponent,
+    TopToolbarComponent
   ],
   imports: [
     BrowserModule,
