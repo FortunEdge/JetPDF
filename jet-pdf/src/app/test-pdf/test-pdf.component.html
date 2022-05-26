@@ -1,4 +1,12 @@
 <p>Internal screaming ensues...</p>
+<h1>First Page Thumbnail</h1>
+<pdf-viewer
+  [src]="pdfSrc"
+  [render-text]="true"
+  [original-size]="false"
+  [page]="0"
+  style="width: 800px; height: 600px"
+></pdf-viewer>
 <h1>Catalog</h1>
 <ul class="list-group mb-4">
     <li class="list-group-item" *ngFor="let cat of catalogEntries">

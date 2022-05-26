@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TestPdfComponent } from './test-pdf/test-pdf.component';
 import { PdfObjectInfoComponent } from './pdf-object-info/pdf-object-info.component';
+import { PageThumbnailComponent } from './page-thumbnail/page-thumbnail.component';
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestPdfComponent,
-    PdfObjectInfoComponent
+    PdfObjectInfoComponent,
+    PageThumbnailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

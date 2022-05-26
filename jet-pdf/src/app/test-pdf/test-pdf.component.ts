@@ -10,11 +10,13 @@ export class TestPdfComponent implements OnInit {
   pdfbytes = new Uint8Array
   pdfNode?: [PDFName, PDFObject][]
   catalogEntries?: [PDFName, PDFObject][]
+  pdfSrc!:Uint8Array
 
   async ngOnInit(): Promise<void> {
-    // const url = 'https://pdf-lib.js.org/assets/with_update_sections.pdf'
+    const testUrl = 'https://pdf-lib.js.org/assets/with_update_sections.pdf'
     const url = "assets/test-pdf.pdf"
     const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
+    this.pdfSrc = new Uint8Array(existingPdfBytes)
 
     const pdfDoc = await PDFDocument.load(existingPdfBytes)
 
