@@ -1,13 +1,16 @@
 <p>Internal screaming ensues...</p>
 <h1>First Page Thumbnail</h1>
-<pdf-viewer
-  [src]="pdfSrc"
-  [render-text]="true"
-  [original-size]="false"
-  [page]="0"
-  class="w-100"
-  style="height: 200px"
-></pdf-viewer>
+<div class="row bg-primary" style="min-height: 300px">
+    <pdf-viewer
+    [src]="pdfSrc"
+    [render-text]="false"
+    [original-size]="false"
+    [zoom-scale]="'page-fit'"
+    [show-borders]="false"
+    [page]="0"
+    style="max-width:200px; margin-top:20px; padding: 0px"
+    ></pdf-viewer>
+</div>
 <h1>Catalog</h1>
 <ul class="list-group mb-4">
     <li class="list-group-item" *ngFor="let cat of catalogEntries">
